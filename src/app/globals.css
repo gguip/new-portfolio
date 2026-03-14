@@ -3,6 +3,7 @@
 @theme {
   --color-brand-ice: #dffafc;
   --color-brand-mint: #54dea1;
+  --color-brand-teal: #2dd4bf;
   --color-brand-dark: #052c2e;
 
   --color-background: var(--color-brand-dark);

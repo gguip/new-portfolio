@@ -21,7 +21,7 @@ export function Spotlight() {
     <div
       className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
       style={{
-        background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(84, 222, 161, 0.05), transparent 80%)`,
+        background: `radial-gradient(400px circle at ${position.x}px ${position.y}px, rgba(84, 222, 161, 0.05), transparent 80%)`,
       }}
     />
   );

@@ -6,7 +6,7 @@ export function Sidebar() {
   return (
     <>
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl w-min">
           <Link href="/">{profile.name}</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-white sm:text-xl">
