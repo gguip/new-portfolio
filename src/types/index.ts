@@ -4,6 +4,7 @@ export interface ExperienceMeta {
   company: string;
   url?: string;
   period: string;
+  current?: boolean;
   technologies: string[];
 }
 

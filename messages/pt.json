@@ -32,23 +32,28 @@
     "role": "Desenvolvedor Frontend",
     "tagline": "Construo experiências digitais rápidas, acessíveis e centradas no usuário.",
     "about": {
-      "p1": "Sou um desenvolvedor frontend apaixonado por criar interfaces web pixel-perfect, envolventes e acessíveis. Tenho especialização no ecossistema moderno de JavaScript, desenvolvendo frequentemente com React, Next.js e Tailwind CSS.",
-      "p2": "Meu foco é criar aplicações web que não apenas pareçam ótimas, mas que também tenham uma performance excepcional. Acredito em código limpo, design intuitivo e aprendizado contínuo.",
-      "p3": "Quando não estou codando, você normalmente me encontrará explorando novas tecnologias frontend ou aproveitando um bom livro."
+      "p1": "Acredito que software bem feito muda a experiência das pessoas. Por isso, cada projeto que desenvolvo — seja uma interface construída com React e Styled Components, um estado gerenciado com Redux ou um backend orquestrado no Firebase — é pensado com atenção aos detalhes e foco no usuário final. Tudo isso escrito em TypeScript, do primeiro ao último arquivo.",
+      "p2": "Trabalho principalmente com o ecossistema JavaScript moderno, mas transito pelo stack sempre que necessário.",
+      "p3": "Fora do trabalho, recarrego as energias assistindo filmes, maratonando séries ou jogando com os amigos."
     }
   },
   "experience": {
+    "present": "Presente",
     "exp-1": {
-      "role": "Desenvolvedor Frontend Sênior",
-      "description": "Liderou o desenvolvimento frontend de produtos principais. Arquitetou e implementou aplicações React escaláveis, melhorando drasticamente a performance e acessibilidade. Mentoreou desenvolvedores júnior e estabeleceu boas práticas de frontend."
+      "role": "Frontend Developer",
+      "description": "Atuo no desenvolvimento e manutenção de interfaces para o ecossistema Goomer, plataforma de cardápios digitais e autoatendimento para restaurantes. Trabalho com React, Next.js e Styled Components na construção de interfaces, gerenciamento de estado com Redux e Saga, e integração de APIs via Axios — tudo em TypeScript."
     },
     "exp-2": {
-      "role": "Engenheiro Frontend",
-      "description": "Desenvolveu experiências web envolventes e interativas para diversos clientes. Trabalhou em estreita colaboração com equipes de design para garantir implementação pixel-perfect e animações fluidas."
+      "role": "Development Analyst",
+      "description": "Atuei alocado no Rabobank, banco holandês global com foco em crédito para o agronegócio, apoiando o gerenciamento do ERP do banco. Utilizei o ecossistema Microsoft — Power Apps, Power Automate e Power BI — para desenvolver soluções dentro da Power Platform e otimizar processos internos."
     },
     "exp-3": {
-      "role": "Desenvolvedor Web",
-      "description": "Construiu e manteve websites responsivos. Migrou codebases legados para frameworks modernos e otimizou tempos de carregamento em todas as páginas."
+      "role": "Frontend Developer",
+      "description": "Atuei no desenvolvimento do backoffice da rede de pizzarias americana Domino's, contribuindo para a manutenção e evolução da plataforma interna. Utilizei React com Redux e Saga para gerenciamento de estado e Bootstrap para a construção das interfaces."
+    },
+    "exp-4": {
+      "role": "Quality Assurance Support",
+      "description": "Atuei como QA testando o aplicativo mobile do Rodobank para Android e iOS, validando novas features antes do lançamento para os usuários finais."
     }
   },
   "projects": {

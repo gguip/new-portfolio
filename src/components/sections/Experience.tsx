@@ -24,12 +24,15 @@ export async function Experience() {
         {experiences.map((exp) => {
           const role = tExp(`${exp.id}.role`);
           const description = tExp(`${exp.id}.description`);
+          const period = exp.current
+            ? `${exp.period} — ${tExp("present")}`
+            : exp.period;
 
           return (
             <Card key={exp.id}>
               <div className="sm:col-span-2 sm:mt-1 mb-2">
                 <span className="text-xs font-semibold uppercase tracking-wide text-brand-ice/50">
-                  {exp.period}
+                  {period}
                 </span>
               </div>
 
