@@ -1,25 +1,30 @@
-export interface Experience {
+// Non-translatable metadata stored in content files
+export interface ExperienceMeta {
   id: string;
-  role: string;
   company: string;
   url?: string;
   period: string;
-  description: string;
   technologies: string[];
 }
 
-export interface Project {
+export interface ProjectMeta {
   id: string;
-  title: string;
-  description: string;
   url?: string;
   image?: string;
   technologies: string[];
 }
 
+// Full types for rendering (metadata + translated fields)
+export interface Experience extends ExperienceMeta {
+  role: string;
+  description: string;
+}
+
+export interface Project extends ProjectMeta {
+  title: string;
+  description: string;
+}
+
 export interface Profile {
   name: string;
-  role: string;
-  tagline: string;
-  about: string[];
 }

@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "title": "Guilherme Passarinho | Frontend Developer",
+    "description": "Frontend engineer building accessible, high-performance web experiences."
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects"
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "sections": {
+    "about": {
+      "heading": "About",
+      "ariaLabel": "About me"
+    },
+    "experience": {
+      "heading": "Experience",
+      "ariaLabel": "Work experience"
+    },
+    "projects": {
+      "heading": "Projects",
+      "ariaLabel": "Selected projects",
+      "technologiesAriaLabel": "Technologies used"
+    }
+  },
+  "profile": {
+    "role": "Frontend Developer",
+    "tagline": "I build fast, accessible, and user-centric digital experiences.",
+    "about": {
+      "p1": "I'm a frontend developer passionate about crafting pixel-perfect, engaging, and accessible web interfaces. I specialize in the modern JavaScript ecosystem, frequently building with React, Next.js, and Tailwind CSS.",
+      "p2": "My focus is on creating web applications that look great but also perform exceptionally well. I believe in clean code, intuitive design, and continuous learning.",
+      "p3": "When I'm not coding, you can usually find me exploring new frontend technologies or enjoying a good book."
+    }
+  },
+  "experience": {
+    "exp-1": {
+      "role": "Senior Frontend Developer",
+      "description": "Lead the frontend development of core products. Architected and implemented scalable React applications, drastically improving performance and accessibility. Mentored junior developers and established frontend best practices."
+    },
+    "exp-2": {
+      "role": "Frontend Engineer",
+      "description": "Developed engaging and interactive web experiences for various clients. Worked closely with design teams to ensure pixel-perfect implementation and fluid animations."
+    },
+    "exp-3": {
+      "role": "Web Developer",
+      "description": "Built and maintained responsive websites. Migrated legacy codebases to modern frameworks and optimized load times across all pages."
+    }
+  },
+  "projects": {
+    "proj-1": {
+      "title": "E-Commerce Platform Redesign",
+      "description": "A complete overhaul of an e-commerce platform focusing on performance and user experience. Implemented advanced search features, a streamlined checkout process, and dynamic category filtering."
+    },
+    "proj-2": {
+      "title": "Interactive Dashboard",
+      "description": "A data visualization dashboard for marketing analytics. Features real-time data updates, customizable widgets, and accessible chart components."
+    },
+    "proj-3": {
+      "title": "Design System Implementation",
+      "description": "Developed a comprehensive, accessible design system for a suite of enterprise applications. Included comprehensive Storybook documentation."
+    }
+  },
+  "skills": {
+    "accessibility": "Accessibility (a11y)",
+    "responsiveDesign": "Responsive Design"
+  }
+}

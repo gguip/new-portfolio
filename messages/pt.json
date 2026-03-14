@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "title": "Guilherme Passarinho | Desenvolvedor Frontend",
+    "description": "Engenheiro frontend criando experiências web acessíveis e de alta performance."
+  },
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos"
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "E-mail"
+  },
+  "sections": {
+    "about": {
+      "heading": "Sobre",
+      "ariaLabel": "Sobre mim"
+    },
+    "experience": {
+      "heading": "Experiência",
+      "ariaLabel": "Experiência profissional"
+    },
+    "projects": {
+      "heading": "Projetos",
+      "ariaLabel": "Projetos selecionados",
+      "technologiesAriaLabel": "Tecnologias utilizadas"
+    }
+  },
+  "profile": {
+    "role": "Desenvolvedor Frontend",
+    "tagline": "Construo experiências digitais rápidas, acessíveis e centradas no usuário.",
+    "about": {
+      "p1": "Sou um desenvolvedor frontend apaixonado por criar interfaces web pixel-perfect, envolventes e acessíveis. Tenho especialização no ecossistema moderno de JavaScript, desenvolvendo frequentemente com React, Next.js e Tailwind CSS.",
+      "p2": "Meu foco é criar aplicações web que não apenas pareçam ótimas, mas que também tenham uma performance excepcional. Acredito em código limpo, design intuitivo e aprendizado contínuo.",
+      "p3": "Quando não estou codando, você normalmente me encontrará explorando novas tecnologias frontend ou aproveitando um bom livro."
+    }
+  },
+  "experience": {
+    "exp-1": {
+      "role": "Desenvolvedor Frontend Sênior",
+      "description": "Liderou o desenvolvimento frontend de produtos principais. Arquitetou e implementou aplicações React escaláveis, melhorando drasticamente a performance e acessibilidade. Mentoreou desenvolvedores júnior e estabeleceu boas práticas de frontend."
+    },
+    "exp-2": {
+      "role": "Engenheiro Frontend",
+      "description": "Desenvolveu experiências web envolventes e interativas para diversos clientes. Trabalhou em estreita colaboração com equipes de design para garantir implementação pixel-perfect e animações fluidas."
+    },
+    "exp-3": {
+      "role": "Desenvolvedor Web",
+      "description": "Construiu e manteve websites responsivos. Migrou codebases legados para frameworks modernos e otimizou tempos de carregamento em todas as páginas."
+    }
+  },
+  "projects": {
+    "proj-1": {
+      "title": "Redesign de Plataforma E-Commerce",
+      "description": "Uma reformulação completa de uma plataforma de e-commerce com foco em performance e experiência do usuário. Implementou recursos de busca avançados, um processo de checkout simplificado e filtragem dinâmica de categorias."
+    },
+    "proj-2": {
+      "title": "Dashboard Interativo",
+      "description": "Um dashboard de visualização de dados para análise de marketing. Apresenta atualizações de dados em tempo real, widgets personalizáveis e componentes de gráficos acessíveis."
+    },
+    "proj-3": {
+      "title": "Implementação de Design System",
+      "description": "Desenvolveu um design system abrangente e acessível para um conjunto de aplicações empresariais. Incluiu documentação completa no Storybook."
+    }
+  },
+  "skills": {
+    "accessibility": "Acessibilidade (a11y)",
+    "responsiveDesign": "Design Responsivo"
+  }
+}

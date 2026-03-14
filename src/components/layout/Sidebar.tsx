@@ -1,8 +1,13 @@
 import { Github, Linkedin, Mail } from "lucide-react";
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { profile } from "@/content/profile";
 
-export function Sidebar() {
+export async function Sidebar() {
+  const tNav = await getTranslations("nav");
+  const tSocial = await getTranslations("social");
+  const tProfile = await getTranslations("profile");
+
   return (
     <>
       <div>
@@ -10,10 +15,10 @@ export function Sidebar() {
           <Link href="/">{profile.name}</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-white sm:text-xl">
-          {profile.role}
+          {tProfile("role")}
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-brand-ice/80">
-          {profile.tagline}
+          {tProfile("tagline")}
         </p>
 
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
@@ -22,7 +27,7 @@ export function Sidebar() {
               <a className="group flex items-center py-3" href="#about">
                 <span className="nav-indicator mr-4 h-px w-8 bg-brand-ice/50 transition-all group-hover:w-16 group-hover:bg-brand-mint group-focus-visible:w-16 group-focus-visible:bg-brand-mint motion-reduce:transition-none"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-brand-ice/50 group-hover:text-brand-mint group-focus-visible:text-brand-mint">
-                  About
+                  {tNav("about")}
                 </span>
               </a>
             </li>
@@ -30,7 +35,7 @@ export function Sidebar() {
               <a className="group flex items-center py-3" href="#experience">
                 <span className="nav-indicator mr-4 h-px w-8 bg-brand-ice/50 transition-all group-hover:w-16 group-hover:bg-brand-mint group-focus-visible:w-16 group-focus-visible:bg-brand-mint motion-reduce:transition-none"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-brand-ice/50 group-hover:text-brand-mint group-focus-visible:text-brand-mint">
-                  Experience
+                  {tNav("experience")}
                 </span>
               </a>
             </li>
@@ -38,7 +43,7 @@ export function Sidebar() {
               <a className="group flex items-center py-3" href="#projects">
                 <span className="nav-indicator mr-4 h-px w-8 bg-brand-ice/50 transition-all group-hover:w-16 group-hover:bg-brand-mint group-focus-visible:w-16 group-focus-visible:bg-brand-mint motion-reduce:transition-none"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-brand-ice/50 group-hover:text-brand-mint group-focus-visible:text-brand-mint">
-                  Projects
+                  {tNav("projects")}
                 </span>
               </a>
             </li>
@@ -53,9 +58,9 @@ export function Sidebar() {
             href="https://github.com"
             target="_blank"
             rel="noreferrer"
-            aria-label="GitHub"
+            aria-label={tSocial("github")}
           >
-            <span className="sr-only">GitHub</span>
+            <span className="sr-only">{tSocial("github")}</span>
             <Github className="h-6 w-6" />
           </a>
         </li>
@@ -65,9 +70,9 @@ export function Sidebar() {
             href="https://linkedin.com"
             target="_blank"
             rel="noreferrer"
-            aria-label="LinkedIn"
+            aria-label={tSocial("linkedin")}
           >
-            <span className="sr-only">LinkedIn</span>
+            <span className="sr-only">{tSocial("linkedin")}</span>
             <Linkedin className="h-6 w-6" />
           </a>
         </li>
@@ -77,9 +82,9 @@ export function Sidebar() {
             href="mailto:example@example.com"
             target="_blank"
             rel="noreferrer"
-            aria-label="Email"
+            aria-label={tSocial("email")}
           >
-            <span className="sr-only">Email</span>
+            <span className="sr-only">{tSocial("email")}</span>
             <Mail className="h-6 w-6" />
           </a>
         </li>
