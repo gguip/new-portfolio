@@ -55,7 +55,7 @@ export async function Sidebar() {
         <li className="text-xs">
           <a
             className="block hover:text-brand-mint transition-colors"
-            href="https://github.com"
+            href="https://github.com/gguip"
             target="_blank"
             rel="noreferrer"
             aria-label={tSocial("github")}
@@ -67,7 +67,7 @@ export async function Sidebar() {
         <li className="text-xs">
           <a
             className="block hover:text-brand-mint transition-colors"
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/guilhermepassarinho/"
             target="_blank"
             rel="noreferrer"
             aria-label={tSocial("linkedin")}
@@ -79,7 +79,7 @@ export async function Sidebar() {
         <li className="text-xs">
           <a
             className="block hover:text-brand-mint transition-colors"
-            href="mailto:example@example.com"
+            href="mailto:guilhermepassarinho@gmail.com"
             target="_blank"
             rel="noreferrer"
             aria-label={tSocial("email")}
