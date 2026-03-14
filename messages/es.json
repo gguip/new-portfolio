@@ -58,16 +58,12 @@
   },
   "projects": {
     "proj-1": {
-      "title": "Rediseño de Plataforma E-Commerce",
-      "description": "Una revisión completa de una plataforma de comercio electrónico enfocada en el rendimiento y la experiencia del usuario. Implementó funciones de búsqueda avanzadas, un proceso de pago simplificado y filtrado dinámico de categorías."
+      "title": "GoHoot",
+      "description": "Plataforma de cuestionarios interactivos en tiempo real. Crea cuestionarios personalizados y juega con amigos con rankings en vivo, gamificación y soporte multi-dispositivo."
     },
     "proj-2": {
-      "title": "Dashboard Interactivo",
-      "description": "Un dashboard de visualización de datos para análisis de marketing. Presenta actualizaciones de datos en tiempo real, widgets personalizables y componentes de gráficos accesibles."
-    },
-    "proj-3": {
-      "title": "Implementación de Design System",
-      "description": "Desarrolló un design system integral y accesible para una suite de aplicaciones empresariales. Incluyó documentación completa de Storybook."
+      "title": "Roque OS",
+      "description": "Sistema operativo web estilo macOS. Contribuyo con nuevas funcionalidades y desarrollé la app iOS y Android usando Capacitor."
     }
   },
   "skills": {

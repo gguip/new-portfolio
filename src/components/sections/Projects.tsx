@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
@@ -27,14 +28,19 @@ export async function Projects() {
 
           return (
             <Card key={project.id}>
-              <div className="sm:col-span-2 sm:mt-1 mb-2">
-                <span className="text-xs font-semibold uppercase tracking-wide text-brand-ice/50">
-                  {/* Optional logic for thumbnail/image fallback */}
-                  [Image / Year]
-                </span>
-              </div>
+              {project.image && (
+                <div className="mb-3 w-32 overflow-hidden rounded border border-brand-ice/10">
+                  <Image
+                    src={project.image}
+                    alt={title}
+                    width={200}
+                    height={113}
+                    className="w-full object-cover"
+                  />
+                </div>
+              )}
 
-              <div className="sm:col-span-6">
+              <div>
                 <h3 className="font-medium leading-snug text-brand-ice">
                   <div>
                     <a

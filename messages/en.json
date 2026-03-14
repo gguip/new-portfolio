@@ -58,16 +58,12 @@
   },
   "projects": {
     "proj-1": {
-      "title": "E-Commerce Platform Redesign",
-      "description": "A complete overhaul of an e-commerce platform focusing on performance and user experience. Implemented advanced search features, a streamlined checkout process, and dynamic category filtering."
+      "title": "GoHoot",
+      "description": "Real-time interactive quiz platform. Create personalized quizzes and play with friends featuring live rankings, gamification, and multi-device support."
     },
     "proj-2": {
-      "title": "Interactive Dashboard",
-      "description": "A data visualization dashboard for marketing analytics. Features real-time data updates, customizable widgets, and accessible chart components."
-    },
-    "proj-3": {
-      "title": "Design System Implementation",
-      "description": "Developed a comprehensive, accessible design system for a suite of enterprise applications. Included comprehensive Storybook documentation."
+      "title": "Roque OS",
+      "description": "macOS-style web operating system. I contribute new features and built the iOS and Android app using Capacitor."
     }
   },
   "skills": {
