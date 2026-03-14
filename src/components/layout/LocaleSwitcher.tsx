@@ -3,11 +3,12 @@
 import { useTransition } from "react";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import ReactCountryFlag from "react-country-flag";
 
 const localeConfig = {
-  pt: { flag: "🇧🇷", label: "PT" },
-  en: { flag: "🇺🇸", label: "EN" },
-  es: { flag: "🇪🇸", label: "ES" },
+  pt: { countryCode: "BR", label: "PT" },
+  en: { countryCode: "US", label: "EN" },
+  es: { countryCode: "ES", label: "ES" },
 } as const;
 
 export function LocaleSwitcher({ currentLocale }: { currentLocale: string }) {
@@ -24,7 +25,7 @@ export function LocaleSwitcher({ currentLocale }: { currentLocale: string }) {
   return (
     <div className="fixed top-6 right-6 z-40 flex items-center gap-1 rounded-full border border-brand-ice/10 bg-brand-dark/80 px-2 py-1.5 backdrop-blur">
       {routing.locales.map((locale) => {
-        const { flag, label } = localeConfig[locale];
+        const { countryCode, label } = localeConfig[locale];
         const isActive = locale === currentLocale;
 
         return (
@@ -40,7 +41,12 @@ export function LocaleSwitcher({ currentLocale }: { currentLocale: string }) {
             aria-label={`Switch to ${label}`}
             aria-current={isActive ? "true" : undefined}
           >
-            <span aria-hidden="true">{flag}</span>
+            <ReactCountryFlag
+                countryCode={countryCode}
+                svg
+                aria-hidden="true"
+                style={{ width: "1.1em", height: "1.1em" }}
+              />
             {label}
           </button>
         );
