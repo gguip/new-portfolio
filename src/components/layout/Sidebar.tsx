@@ -2,6 +2,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { profile } from "@/content/profile";
+import { EasterEggTrigger } from "@/components/ui/EasterEggTrigger";
 
 export async function Sidebar() {
   const tNav = await getTranslations("nav");
@@ -11,9 +12,11 @@ export async function Sidebar() {
   return (
     <>
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl w-min">
-          <Link href="/">{profile.name}</Link>
-        </h1>
+        <EasterEggTrigger>
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl w-min">
+            <Link href="/">{profile.name}</Link>
+          </h1>
+        </EasterEggTrigger>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-white sm:text-xl">
           {tProfile("role")}
         </h2>
