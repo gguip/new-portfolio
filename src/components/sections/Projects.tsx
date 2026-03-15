@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
+import { SectionContent } from "@/components/ui/SectionContent";
 import { projects } from "@/content/projects";
 
 export async function Projects() {
@@ -15,14 +16,15 @@ export async function Projects() {
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
       aria-label={t("ariaLabel")}
     >
-      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-brand-dark/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0">
-        <h2 className="text-sm font-bold uppercase tracking-widest text-brand-ice">
-          {t("heading")}
-        </h2>
-      </div>
+      <SectionContent>
+        <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-brand-dark/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-brand-ice">
+            {t("heading")}
+          </h2>
+        </div>
 
-      <div className="group/list space-y-12">
-        {projects.map((project) => {
+        <div className="group/list space-y-12">
+          {projects.map((project) => {
           const title = tProj(`${project.id}.title`);
           const description = tProj(`${project.id}.description`);
 
@@ -76,8 +78,9 @@ export async function Projects() {
               </div>
             </Card>
           );
-        })}
-      </div>
+          })}
+        </div>
+      </SectionContent>
     </section>
   );
 }
