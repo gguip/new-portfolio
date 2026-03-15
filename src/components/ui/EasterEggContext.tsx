@@ -4,24 +4,33 @@ import { createContext, useContext, useState, useCallback, ReactNode } from "rea
 
 interface EasterEggContextType {
   showEasterEgg: boolean;
+  isFadingOut: boolean;
   triggerEasterEgg: () => void;
 }
 
 const EasterEggContext = createContext<EasterEggContextType>({
   showEasterEgg: false,
+  isFadingOut: false,
   triggerEasterEgg: () => {},
 });
 
 export function EasterEggProvider({ children }: { children: ReactNode }) {
   const [showEasterEgg, setShowEasterEgg] = useState(false);
+  const [isFadingOut, setIsFadingOut] = useState(false);
 
   const triggerEasterEgg = useCallback(() => {
     setShowEasterEgg(true);
-    setTimeout(() => setShowEasterEgg(false), 15000);
+    setTimeout(() => {
+      setIsFadingOut(true);        // inicia fade dos pássaros
+      setTimeout(() => {
+        setShowEasterEgg(false);   // agora sim destrói o vanta
+        setIsFadingOut(false);     // libera seções para fade-in
+      }, 1000);                     // 1s = duração do CSS transition
+    }, 15000);
   }, []);
 
   return (
-    <EasterEggContext.Provider value={{ showEasterEgg, triggerEasterEgg }}>
+    <EasterEggContext.Provider value={{ showEasterEgg, isFadingOut, triggerEasterEgg }}>
       {children}
     </EasterEggContext.Provider>
   );

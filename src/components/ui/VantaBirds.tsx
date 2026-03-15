@@ -5,9 +5,10 @@ import * as THREE from "three";
 
 interface VantaBirdsProps {
   isActive: boolean;
+  isFadingOut: boolean;
 }
 
-export function VantaBirds({ isActive }: VantaBirdsProps) {
+export function VantaBirds({ isActive, isFadingOut }: VantaBirdsProps) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [vantaEffect, setVantaEffect] = useState<any>(0);
   const vantaRef = useRef<HTMLDivElement>(null);
@@ -25,7 +26,7 @@ export function VantaBirds({ isActive }: VantaBirdsProps) {
           // @ts-expect-error Types for vanta.birds.min are not available
           const vantaModule = await import("vanta/dist/vanta.birds.min");
           const WAVES = vantaModule.default || vantaModule;
-          
+
           setVantaEffect(
             WAVES({
               el: vantaRef.current,
@@ -57,7 +58,7 @@ export function VantaBirds({ isActive }: VantaBirdsProps) {
 
       loadVanta();
     }
-    
+
     if (vantaEffect && !isActive) {
         vantaEffect.destroy();
         setVantaEffect(0);
@@ -72,7 +73,7 @@ export function VantaBirds({ isActive }: VantaBirdsProps) {
     <div
       ref={vantaRef}
       className={`fixed inset-0 z-[-1] transition-opacity duration-1000 ${
-        isActive ? "opacity-100" : "opacity-0 pointer-events-none"
+        isActive && !isFadingOut ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     />
   );

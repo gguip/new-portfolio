@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, ReactNode } from "react";
+import { useRef, useEffect, ReactNode } from "react";
 import { VantaBirds } from "./VantaBirds";
 import { useEasterEgg } from "./EasterEggContext";
 
@@ -9,31 +9,37 @@ interface EasterEggTriggerProps {
 }
 
 export function EasterEggTrigger({ children }: EasterEggTriggerProps) {
-  const [clickCount, setClickCount] = useState(0);
-  const { showEasterEgg, triggerEasterEgg } = useEasterEgg();
-
-  useEffect(() => {
-    if (clickCount > 0 && clickCount < 3) {
-      const timer = setTimeout(() => setClickCount(0), 1000);
-      return () => clearTimeout(timer);
-    }
-
-    if (clickCount >= 3) {
-      triggerEasterEgg();
-      setClickCount(0);
-    }
-  }, [clickCount, triggerEasterEgg]);
+  const clickCountRef = useRef(0);
+  const timerRef = useRef<NodeJS.Timeout>(undefined);
+  const { showEasterEgg, isFadingOut, triggerEasterEgg } = useEasterEgg();
 
   const handleClick = () => {
-    setClickCount((prev) => prev + 1);
+    clearTimeout(timerRef.current);
+    clickCountRef.current += 1;
+
+    if (clickCountRef.current >= 3) {
+      clickCountRef.current = 0;
+      triggerEasterEgg();
+    } else {
+      timerRef.current = setTimeout(() => {
+        clickCountRef.current = 0;
+      }, 1000);
+    }
   };
+
+  useEffect(() => {
+    return () => clearTimeout(timerRef.current);
+  }, []);
 
   return (
     <>
-      <div onClick={handleClick} className="inline-block cursor-pointer select-none">
+      <div
+        onClick={handleClick}
+        className="inline-block cursor-pointer select-none"
+      >
         {children}
       </div>
-      <VantaBirds isActive={showEasterEgg} />
+      <VantaBirds isActive={showEasterEgg} isFadingOut={isFadingOut} />
     </>
   );
 }
