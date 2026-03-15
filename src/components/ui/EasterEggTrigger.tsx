@@ -4,6 +4,17 @@ import { useRef, useEffect, ReactNode } from "react";
 import { VantaBirds } from "./VantaBirds";
 import { useEasterEgg } from "./EasterEggContext";
 
+function supportsWebGL(): boolean {
+  try {
+    const canvas = document.createElement("canvas");
+    return !!(
+      canvas.getContext("webgl") || canvas.getContext("experimental-webgl")
+    );
+  } catch {
+    return false;
+  }
+}
+
 interface EasterEggTriggerProps {
   children: ReactNode;
 }
@@ -19,7 +30,9 @@ export function EasterEggTrigger({ children }: EasterEggTriggerProps) {
 
     if (clickCountRef.current >= 3) {
       clickCountRef.current = 0;
-      triggerEasterEgg();
+      if (supportsWebGL()) {
+        triggerEasterEgg();
+      }
     } else {
       timerRef.current = setTimeout(() => {
         clickCountRef.current = 0;
