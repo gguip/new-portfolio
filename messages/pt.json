@@ -69,5 +69,15 @@
   "skills": {
     "accessibility": "Acessibilidade (a11y)",
     "responsiveDesign": "Design Responsivo"
+  },
+  "legal": {
+    "back": "Voltar ao início",
+    "updated": "Última atualização em {date}",
+    "contents": "Nesta página",
+    "seeAlso": "Veja também:",
+    "documents": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Uso"
+    }
   }
 }
