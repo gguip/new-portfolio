@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { LegalCallout } from "@/components/ui/LegalCallout";
+import { LEGAL_PATHS } from "@/content/legal";
 import type { LegalBlock, LegalDocument, LegalSlug, Locale } from "@/types";
 
 // The document dates are stored as plain `YYYY-MM-DD`. Parsing them as UTC and
@@ -27,6 +28,32 @@ function Block({ block }: { block: LegalBlock }) {
     return <LegalCallout title={block.title} text={block.text} />;
   }
 
+  if (block.type === "faq") {
+    return (
+      <dl className="mt-4 flex flex-col gap-6">
+        {block.items.map((item) => (
+          <div key={item.question}>
+            <dt className="font-semibold text-brand-ice">{item.question}</dt>
+            <dd className="mt-2">{item.answer}</dd>
+          </div>
+        ))}
+      </dl>
+    );
+  }
+
+  if (block.type === "contact") {
+    return (
+      <p className="mt-4">
+        <a
+          href={`mailto:${block.email}`}
+          className="font-medium text-brand-teal underline underline-offset-4 transition-colors hover:text-brand-mint"
+        >
+          {block.label}
+        </a>
+      </p>
+    );
+  }
+
   if (block.type === "list") {
     return (
       <ul className="mt-4 flex list-disc flex-col gap-2 pl-5 marker:text-brand-mint">
@@ -50,10 +77,9 @@ export async function LegalDocumentView({
   locale,
 }: LegalDocumentViewProps) {
   const t = await getTranslations("legal");
-  const otherSlug: LegalSlug =
-    document.slug === "privacy" ? "terms" : "privacy";
-  const otherHref =
-    otherSlug === "privacy" ? "/tirzeflow/privacidade" : "/tirzeflow/termos";
+  const otherSlugs = (Object.keys(LEGAL_PATHS) as LegalSlug[]).filter(
+    (slug) => slug !== document.slug
+  );
 
   return (
     <article className="mx-auto max-w-3xl py-16 lg:py-24">
@@ -75,9 +101,11 @@ export async function LegalDocumentView({
         <h1 className="mt-3 text-4xl font-bold tracking-tight text-brand-ice sm:text-5xl">
           {document.title}
         </h1>
-        <p className="mt-4 text-sm text-brand-ice/50">
-          {t("updated", { date: formatDate(document.updatedAt, locale) })}
-        </p>
+        {document.updatedAt ? (
+          <p className="mt-4 text-sm text-brand-ice/50">
+            {t("updated", { date: formatDate(document.updatedAt, locale) })}
+          </p>
+        ) : null}
         <p className="mt-6 text-lg leading-relaxed text-brand-ice/80 text-balance">
           {document.summary}
         </p>
@@ -118,14 +146,17 @@ export async function LegalDocumentView({
       </div>
 
       <footer className="mt-16 border-t border-brand-ice/10 pt-8">
-        <p className="text-sm text-brand-ice/50">
-          {t("seeAlso")}{" "}
-          <Link
-            href={otherHref}
-            className="font-medium text-brand-teal underline underline-offset-4 transition-colors hover:text-brand-mint"
-          >
-            {t(`documents.${otherSlug}`)}
-          </Link>
+        <p className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-brand-ice/50">
+          <span>{t("seeAlso")}</span>
+          {otherSlugs.map((slug) => (
+            <Link
+              key={slug}
+              href={LEGAL_PATHS[slug]}
+              className="font-medium text-brand-teal underline underline-offset-4 transition-colors hover:text-brand-mint"
+            >
+              {t(`documents.${slug}`)}
+            </Link>
+          ))}
         </p>
       </footer>
     </article>

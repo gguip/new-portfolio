@@ -2,6 +2,9 @@ import { LegalDocument, LegalSlug, Locale } from "@/types";
 import { privacyEn } from "./privacy.en";
 import { privacyEs } from "./privacy.es";
 import { privacyPt } from "./privacy.pt";
+import { supportEn } from "./support.en";
+import { supportEs } from "./support.es";
+import { supportPt } from "./support.pt";
 import { termsEn } from "./terms.en";
 import { termsEs } from "./terms.es";
 import { termsPt } from "./terms.pt";
@@ -13,6 +16,16 @@ import { termsPt } from "./terms.pt";
 const documents: Record<LegalSlug, Record<Locale, LegalDocument>> = {
   privacy: { pt: privacyPt, en: privacyEn, es: privacyEs },
   terms: { pt: termsPt, en: termsEn, es: termsEs },
+  support: { pt: supportPt, en: supportEn, es: supportEs },
+};
+
+// Paths are not translated: the routes are the same in all three languages and only the
+// locale prefix changes. The app links to these exact paths (`LinksLegais` in the mobile
+// repo builds them by hand), so renaming one is a breaking change for a shipped binary.
+export const LEGAL_PATHS: Record<LegalSlug, string> = {
+  privacy: "/tirzeflow/privacidade",
+  terms: "/tirzeflow/termos",
+  support: "/tirzeflow/suporte",
 };
 
 export function getLegalDocument(
