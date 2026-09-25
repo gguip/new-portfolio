@@ -17,8 +17,8 @@ export const supportEs: LegalDocument = {
         },
         {
           type: "contact",
-          label: "guilhermepassarinho@gmail.com",
-          email: "guilhermepassarinho@gmail.com",
+          label: "suporte@gguip.dev",
+          email: "suporte@gguip.dev",
         },
         {
           type: "paragraph",

@@ -6,7 +6,7 @@ export const termsPt: LegalDocument = {
   title: "Termos de Uso",
   summary:
     "Estes termos regem o uso do TirzeFlow. O ponto que mais importa cabe em uma linha: o aplicativo é um diário pessoal de tratamento, não um dispositivo médico e não um conselho clínico. Ele registra o que o seu prescritor orientou e nunca sugere conduta.",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-09-25",
   sections: [
     {
       id: "aceite",
@@ -18,7 +18,7 @@ export const termsPt: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "O TirzeFlow é fornecido por Guilherme Passarinho, pessoa física, no Brasil. Contato: guilhermepassarinho@gmail.com.",
+          text: "O TirzeFlow é fornecido por Guilherme Passarinho, pessoa física, no Brasil. Contato: suporte@gguip.dev.",
         },
       ],
     },
@@ -189,7 +189,7 @@ export const termsPt: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Dúvidas sobre estes termos ou sobre o aplicativo: guilhermepassarinho@gmail.com.",
+          text: "Dúvidas sobre estes termos ou sobre o aplicativo: suporte@gguip.dev.",
         },
       ],
     },
