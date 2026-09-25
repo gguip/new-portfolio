@@ -222,7 +222,7 @@ export const privacyPt: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "A exclusão é feita inteiramente dentro do aplicativo, sem precisar entrar em contato com ninguém: abra a aba Perfil, role até o fim da tela e toque em Excluir conta. O aplicativo mostra o que será apagado e pede uma confirmação.",
+          text: "No aplicativo, sem precisar entrar em contato com ninguém: abra a aba Perfil, role até o fim da tela e toque em Excluir minha conta. O aplicativo mostra o que será apagado e pede uma confirmação. Se você não tem mais o aplicativo instalado, a página gguip.dev/pt/tirzeflow/excluir-conta explica como pedir a exclusão por e-mail.",
         },
         {
           type: "paragraph",

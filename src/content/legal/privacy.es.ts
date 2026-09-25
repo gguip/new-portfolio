@@ -222,7 +222,7 @@ export const privacyEs: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "La eliminación se realiza íntegramente dentro de la aplicación, sin necesidad de contactar con nadie: abre la pestaña Perfil, desplázate hasta el final de la pantalla y pulsa Eliminar cuenta. La aplicación muestra qué se va a borrar y pide una confirmación.",
+          text: "En la aplicación, sin necesidad de contactar con nadie: abre la pestaña Perfil, desplázate hasta el final de la pantalla y pulsa Eliminar mi cuenta. La aplicación muestra qué se va a borrar y pide una confirmación. Si ya no tienes la aplicación instalada, la página gguip.dev/es/tirzeflow/excluir-conta explica cómo pedir la eliminación por correo.",
         },
         {
           type: "paragraph",

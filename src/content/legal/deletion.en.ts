@@ -51,7 +51,7 @@ export const deletionEn: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "Nothing is kept after deletion: there is no grace period, no retained copy and no way to recover it. If you want your data, export it from the app before deleting.",
+          text: "Your data is erased from the database right away, and deletion cannot be undone: there is no grace period and no way to recover it. Encrypted daily backups that still contain it expire within thirty days.",
         },
       ],
     },

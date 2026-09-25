@@ -51,7 +51,7 @@ export const deletionPt: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "Nada é guardado depois da exclusão: não há período de carência, cópia de retenção nem como recuperar. Se quiser os seus dados, exporte pelo app antes de excluir.",
+          text: "Os dados saem do banco na hora, e a exclusão não tem volta: não há período de carência nem como recuperar. As cópias de segurança diárias, criptografadas, que ainda os contiverem expiram em até trinta dias.",
         },
       ],
     },

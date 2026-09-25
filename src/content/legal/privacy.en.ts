@@ -222,7 +222,7 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Deletion happens entirely inside the app, with no need to contact anyone: open the Profile tab, scroll to the bottom of the screen, and tap Delete account. The app shows what will be erased and asks for confirmation.",
+          text: "In the app, with no need to contact anyone: open the Profile tab, scroll to the bottom of the screen, and tap Delete my account. The app shows what will be erased and asks for confirmation. If you no longer have the app installed, the page gguip.dev/en/tirzeflow/excluir-conta explains how to request deletion by email.",
         },
         {
           type: "paragraph",

@@ -51,7 +51,7 @@ export const deletionEs: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "No se guarda nada tras la eliminación: no hay período de gracia, copia retenida ni forma de recuperarla. Si quieres tus datos, expórtalos desde la aplicación antes de eliminar.",
+          text: "Los datos se borran de la base de datos en el acto, y la eliminación no tiene vuelta atrás: no hay período de gracia ni forma de recuperarlos. Las copias de seguridad diarias, cifradas, que aún los contengan expiran en un plazo máximo de treinta días.",
         },
       ],
     },
