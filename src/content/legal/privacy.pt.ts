@@ -200,19 +200,18 @@ export const privacyPt: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "A LGPD garante a você, entre outros, os direitos de confirmação, acesso, correção, anonimização, portabilidade, eliminação e informação sobre compartilhamento. Três deles estão implementados diretamente no aplicativo:",
+          text: "A LGPD garante a você, entre outros, os direitos de confirmação, acesso, correção, anonimização, portabilidade, eliminação e informação sobre compartilhamento. Dois deles estão implementados diretamente no aplicativo:",
         },
         {
           type: "list",
           items: [
-            "Acesso e portabilidade: você pode exportar todos os seus dados em formato aberto, legível por máquina.",
             "Correção: todo registro do diário pode ser editado ou apagado individualmente, a qualquer momento.",
             "Eliminação: a exclusão da conta, feita dentro do aplicativo, apaga tudo.",
           ],
         },
         {
           type: "paragraph",
-          text: "Para os demais direitos, escreva para suporte@gguip.dev. A resposta é enviada em até quinze dias.",
+          text: "Acesso e portabilidade: para receber uma cópia de todos os seus dados, em formato aberto e legível por máquina (JSON), escreva para suporte@gguip.dev a partir do e-mail cadastrado na conta. Para os demais direitos, escreva para o mesmo endereço. A resposta é enviada em até quinze dias.",
         },
       ],
     },

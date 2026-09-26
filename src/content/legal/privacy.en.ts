@@ -200,19 +200,18 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "You have, among others, the rights of confirmation, access, correction, anonymisation, portability, erasure, and information about sharing. Three of them are implemented directly in the app:",
+          text: "You have, among others, the rights of confirmation, access, correction, anonymisation, portability, erasure, and information about sharing. Two of them are implemented directly in the app:",
         },
         {
           type: "list",
           items: [
-            "Access and portability: you can export all of your data in an open, machine-readable format.",
             "Correction: every journal record can be edited or deleted individually, at any time.",
             "Erasure: deleting your account, done inside the app, erases everything.",
           ],
         },
         {
           type: "paragraph",
-          text: "For the remaining rights, write to suporte@gguip.dev. You will get an answer within fifteen days.",
+          text: "Access and portability: to get a copy of all of your data, in an open, machine-readable format (JSON), write to suporte@gguip.dev from the email address registered on the account. For the remaining rights, write to the same address. You will get an answer within fifteen days.",
         },
       ],
     },

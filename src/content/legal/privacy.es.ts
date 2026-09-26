@@ -200,19 +200,18 @@ export const privacyEs: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Tienes, entre otros, los derechos de confirmación, acceso, rectificación, anonimización, portabilidad, supresión e información sobre la comunicación de datos. Tres de ellos están implementados directamente en la aplicación:",
+          text: "Tienes, entre otros, los derechos de confirmación, acceso, rectificación, anonimización, portabilidad, supresión e información sobre la comunicación de datos. Dos de ellos están implementados directamente en la aplicación:",
         },
         {
           type: "list",
           items: [
-            "Acceso y portabilidad: puedes exportar todos tus datos en un formato abierto y legible por máquina.",
             "Rectificación: cada registro del diario puede editarse o borrarse individualmente, en cualquier momento.",
             "Supresión: eliminar la cuenta, desde dentro de la aplicación, lo borra todo.",
           ],
         },
         {
           type: "paragraph",
-          text: "Para los demás derechos, escribe a suporte@gguip.dev. La respuesta se envía en un plazo de quince días.",
+          text: "Acceso y portabilidad: para recibir una copia de todos tus datos, en un formato abierto y legible por máquina (JSON), escribe a suporte@gguip.dev desde el correo registrado en la cuenta. Para los demás derechos, escribe a la misma dirección. La respuesta se envía en un plazo de quince días.",
         },
       ],
     },

@@ -99,7 +99,7 @@ export const termsPt: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "Você pode exportar seus dados em formato aberto a qualquer momento, e pode apagá-los excluindo a conta dentro do aplicativo.",
+          text: "Você pode pedir uma cópia dos seus dados em formato aberto a qualquer momento, escrevendo para suporte@gguip.dev, e pode apagá-los excluindo a conta dentro do aplicativo.",
         },
         {
           type: "paragraph",

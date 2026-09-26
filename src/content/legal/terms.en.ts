@@ -99,7 +99,7 @@ export const termsEn: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "You can export your data in an open format at any time, and you can erase it by deleting your account inside the app.",
+          text: "You can ask for a copy of your data in an open format at any time by writing to suporte@gguip.dev, and you can erase it by deleting your account inside the app.",
         },
         {
           type: "paragraph",

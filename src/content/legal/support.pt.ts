@@ -41,7 +41,7 @@ export const supportPt: LegalDocument = {
             {
               question: "Como exporto meus dados?",
               answer:
-                "O app exporta tudo em formato aberto, legível por máquina. Vale fazer isso antes de excluir a conta, porque a exclusão não tem volta.",
+                "Escreva para suporte@gguip.dev a partir do e-mail cadastrado na conta, pedindo a cópia. Você recebe tudo em formato aberto, legível por máquina (JSON), em até quinze dias. Vale pedir antes de excluir a conta, porque a exclusão não tem volta.",
             },
             {
               question: "Não recebi o código de verificação.",

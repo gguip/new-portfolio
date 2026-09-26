@@ -41,7 +41,7 @@ export const supportEn: LegalDocument = {
             {
               question: "How do I export my data?",
               answer:
-                "The app exports everything in an open, machine-readable format. Worth doing before you delete the account, because deletion cannot be undone.",
+                "Write to suporte@gguip.dev from the email address registered on the account, asking for a copy. You get everything in an open, machine-readable format (JSON) within fifteen days. Worth asking before you delete the account, because deletion cannot be undone.",
             },
             {
               question: "I did not receive the verification code.",
