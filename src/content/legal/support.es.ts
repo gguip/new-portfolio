@@ -17,8 +17,8 @@ export const supportEs: LegalDocument = {
         },
         {
           type: "contact",
-          label: "guilhermepassarinho@gmail.com",
-          email: "guilhermepassarinho@gmail.com",
+          label: "suporte@gguip.dev",
+          email: "suporte@gguip.dev",
         },
         {
           type: "paragraph",
@@ -41,7 +41,7 @@ export const supportEs: LegalDocument = {
             {
               question: "¿Cómo exporto mis datos?",
               answer:
-                "La aplicación exporta todo en un formato abierto y legible por máquina. Conviene hacerlo antes de eliminar la cuenta, porque la eliminación no tiene vuelta atrás.",
+                "Escribe a suporte@gguip.dev desde el correo registrado en la cuenta, pidiendo la copia. Recibes todo en un formato abierto y legible por máquina (JSON) en un plazo de quince días. Conviene pedirla antes de eliminar la cuenta, porque la eliminación no tiene vuelta atrás.",
             },
             {
               question: "No recibí el código de verificación.",

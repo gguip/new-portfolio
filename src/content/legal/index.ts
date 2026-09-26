@@ -1,4 +1,7 @@
 import { LegalDocument, LegalSlug, Locale } from "@/types";
+import { deletionEn } from "./deletion.en";
+import { deletionEs } from "./deletion.es";
+import { deletionPt } from "./deletion.pt";
 import { privacyEn } from "./privacy.en";
 import { privacyEs } from "./privacy.es";
 import { privacyPt } from "./privacy.pt";
@@ -17,6 +20,7 @@ const documents: Record<LegalSlug, Record<Locale, LegalDocument>> = {
   privacy: { pt: privacyPt, en: privacyEn, es: privacyEs },
   terms: { pt: termsPt, en: termsEn, es: termsEs },
   support: { pt: supportPt, en: supportEn, es: supportEs },
+  deletion: { pt: deletionPt, en: deletionEn, es: deletionEs },
 };
 
 // Paths are not translated: the routes are the same in all three languages and only the
@@ -26,6 +30,7 @@ export const LEGAL_PATHS: Record<LegalSlug, string> = {
   privacy: "/tirzeflow/privacidade",
   terms: "/tirzeflow/termos",
   support: "/tirzeflow/suporte",
+  deletion: "/tirzeflow/excluir-conta",
 };
 
 export function getLegalDocument(

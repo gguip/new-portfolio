@@ -6,7 +6,7 @@ export const privacyEs: LegalDocument = {
   title: "Política de Privacidad",
   summary:
     "TirzeFlow es un diario personal de tratamiento. Guarda datos de salud que tú mismo registras — peso, dosis, medidas, efectos secundarios —, la información más sensible que puede guardar una aplicación. Esta política indica exactamente qué se recopila, para qué, con quién se comparte y cómo borrarlo todo. No hay publicidad, no hay rastreo y nada se vende.",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-09-25",
   sections: [
     {
       id: "responsable",
@@ -18,7 +18,7 @@ export const privacyEs: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "Contacto para cualquier asunto de privacidad, incluido el ejercicio de tus derechos: guilhermepassarinho@gmail.com.",
+          text: "Contacto para cualquier asunto de privacidad, incluido el ejercicio de tus derechos: suporte@gguip.dev.",
         },
       ],
     },
@@ -200,19 +200,18 @@ export const privacyEs: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Tienes, entre otros, los derechos de confirmación, acceso, rectificación, anonimización, portabilidad, supresión e información sobre la comunicación de datos. Tres de ellos están implementados directamente en la aplicación:",
+          text: "Tienes, entre otros, los derechos de confirmación, acceso, rectificación, anonimización, portabilidad, supresión e información sobre la comunicación de datos. Dos de ellos están implementados directamente en la aplicación:",
         },
         {
           type: "list",
           items: [
-            "Acceso y portabilidad: puedes exportar todos tus datos en un formato abierto y legible por máquina.",
             "Rectificación: cada registro del diario puede editarse o borrarse individualmente, en cualquier momento.",
             "Supresión: eliminar la cuenta, desde dentro de la aplicación, lo borra todo.",
           ],
         },
         {
           type: "paragraph",
-          text: "Para los demás derechos, escribe a guilhermepassarinho@gmail.com. La respuesta se envía en un plazo de quince días.",
+          text: "Acceso y portabilidad: para recibir una copia de todos tus datos, en un formato abierto y legible por máquina (JSON), escribe a suporte@gguip.dev desde el correo registrado en la cuenta. Para los demás derechos, escribe a la misma dirección. La respuesta se envía en un plazo de quince días.",
         },
       ],
     },
@@ -222,7 +221,7 @@ export const privacyEs: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "La eliminación se realiza íntegramente dentro de la aplicación, sin necesidad de contactar con nadie: abre la pestaña Perfil, desplázate hasta el final de la pantalla y pulsa Eliminar cuenta. La aplicación muestra qué se va a borrar y pide una confirmación.",
+          text: "En la aplicación, sin necesidad de contactar con nadie: abre la pestaña Perfil, desplázate hasta el final de la pantalla y pulsa Eliminar mi cuenta. La aplicación muestra qué se va a borrar y pide una confirmación. Si ya no tienes la aplicación instalada, la página gguip.dev/es/tirzeflow/excluir-conta explica cómo pedir la eliminación por correo.",
         },
         {
           type: "paragraph",
@@ -240,7 +239,7 @@ export const privacyEs: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "TirzeFlow no está dirigida a menores de 18 años y no recopila intencionadamente datos de ese grupo de edad. Si sabemos que una cuenta fue creada por un menor, se eliminará. Si eres madre, padre o tutor y crees que ha ocurrido, escribe a guilhermepassarinho@gmail.com.",
+          text: "TirzeFlow no está dirigida a menores de 18 años y no recopila intencionadamente datos de ese grupo de edad. Si sabemos que una cuenta fue creada por un menor, se eliminará. Si eres madre, padre o tutor y crees que ha ocurrido, escribe a suporte@gguip.dev.",
         },
       ],
     },
@@ -271,7 +270,7 @@ export const privacyEs: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Dudas, solicitudes o reclamaciones sobre privacidad: guilhermepassarinho@gmail.com. También puedes reclamar directamente ante la Autoridad Nacional de Protección de Datos de Brasil (ANPD).",
+          text: "Dudas, solicitudes o reclamaciones sobre privacidad: suporte@gguip.dev. También puedes reclamar directamente ante la Autoridad Nacional de Protección de Datos de Brasil (ANPD).",
         },
       ],
     },

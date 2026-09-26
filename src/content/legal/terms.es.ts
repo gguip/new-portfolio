@@ -6,7 +6,7 @@ export const termsEs: LegalDocument = {
   title: "Términos de Uso",
   summary:
     "Estos términos rigen el uso de TirzeFlow. Lo que más importa cabe en una línea: la aplicación es un diario personal de tratamiento, no un producto sanitario ni un consejo clínico. Registra lo que indicó quien te prescribe y nunca sugiere una conducta.",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-09-25",
   sections: [
     {
       id: "aceptacion",
@@ -18,7 +18,7 @@ export const termsEs: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "TirzeFlow lo ofrece Guilherme Passarinho, persona física residente en Brasil. Contacto: guilhermepassarinho@gmail.com.",
+          text: "TirzeFlow lo ofrece Guilherme Passarinho, persona física residente en Brasil. Contacto: suporte@gguip.dev.",
         },
       ],
     },
@@ -99,7 +99,7 @@ export const termsEs: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "Puedes exportar tus datos en un formato abierto en cualquier momento, y puedes borrarlos eliminando la cuenta dentro de la aplicación.",
+          text: "Puedes pedir una copia de tus datos en un formato abierto en cualquier momento escribiendo a suporte@gguip.dev, y puedes borrarlos eliminando la cuenta dentro de la aplicación.",
         },
         {
           type: "paragraph",
@@ -189,7 +189,7 @@ export const termsEs: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Dudas sobre estos términos o sobre la aplicación: guilhermepassarinho@gmail.com.",
+          text: "Dudas sobre estos términos o sobre la aplicación: suporte@gguip.dev.",
         },
       ],
     },

@@ -6,7 +6,7 @@ export const privacyEn: LegalDocument = {
   title: "Privacy Policy",
   summary:
     "TirzeFlow is a personal treatment journal. It holds health data you record yourself — weight, doses, measurements, side effects — which is the most sensitive information an app can hold. This policy states exactly what is collected, why, who it is shared with, and how to erase all of it. There is no advertising, no tracking, and nothing is sold.",
-  updatedAt: "2026-09-21",
+  updatedAt: "2026-09-25",
   sections: [
     {
       id: "controller",
@@ -18,7 +18,7 @@ export const privacyEn: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "For anything related to privacy, including exercising your rights: guilhermepassarinho@gmail.com.",
+          text: "For anything related to privacy, including exercising your rights: suporte@gguip.dev.",
         },
       ],
     },
@@ -200,19 +200,18 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "You have, among others, the rights of confirmation, access, correction, anonymisation, portability, erasure, and information about sharing. Three of them are implemented directly in the app:",
+          text: "You have, among others, the rights of confirmation, access, correction, anonymisation, portability, erasure, and information about sharing. Two of them are implemented directly in the app:",
         },
         {
           type: "list",
           items: [
-            "Access and portability: you can export all of your data in an open, machine-readable format.",
             "Correction: every journal record can be edited or deleted individually, at any time.",
             "Erasure: deleting your account, done inside the app, erases everything.",
           ],
         },
         {
           type: "paragraph",
-          text: "For the remaining rights, write to guilhermepassarinho@gmail.com. You will get an answer within fifteen days.",
+          text: "Access and portability: to get a copy of all of your data, in an open, machine-readable format (JSON), write to suporte@gguip.dev from the email address registered on the account. For the remaining rights, write to the same address. You will get an answer within fifteen days.",
         },
       ],
     },
@@ -222,7 +221,7 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Deletion happens entirely inside the app, with no need to contact anyone: open the Profile tab, scroll to the bottom of the screen, and tap Delete account. The app shows what will be erased and asks for confirmation.",
+          text: "In the app, with no need to contact anyone: open the Profile tab, scroll to the bottom of the screen, and tap Delete my account. The app shows what will be erased and asks for confirmation. If you no longer have the app installed, the page gguip.dev/en/tirzeflow/excluir-conta explains how to request deletion by email.",
         },
         {
           type: "paragraph",
@@ -240,7 +239,7 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "TirzeFlow is not intended for anyone under 18 and does not knowingly collect data from that age group. If we learn that an account was created by a minor, it will be deleted. If you are a parent or guardian and believe this has happened, write to guilhermepassarinho@gmail.com.",
+          text: "TirzeFlow is not intended for anyone under 18 and does not knowingly collect data from that age group. If we learn that an account was created by a minor, it will be deleted. If you are a parent or guardian and believe this has happened, write to suporte@gguip.dev.",
         },
       ],
     },
@@ -271,7 +270,7 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Questions, requests, or complaints about privacy: guilhermepassarinho@gmail.com. You may also complain directly to Brazil's National Data Protection Authority (ANPD).",
+          text: "Questions, requests, or complaints about privacy: suporte@gguip.dev. You may also complain directly to Brazil's National Data Protection Authority (ANPD).",
         },
       ],
     },

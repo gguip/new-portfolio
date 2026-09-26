@@ -42,7 +42,7 @@ export interface Profile {
 // drift from this one the first time either changed.
 export type Locale = "pt" | "en" | "es";
 
-export type LegalSlug = "privacy" | "terms" | "support";
+export type LegalSlug = "privacy" | "terms" | "support" | "deletion";
 
 export type LegalBlock =
   | { type: "paragraph"; text: string }

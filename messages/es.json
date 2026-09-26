@@ -78,7 +78,8 @@
     "documents": {
       "privacy": "Política de Privacidad",
       "terms": "Términos de Uso",
-      "support": "Soporte"
+      "support": "Soporte",
+      "deletion": "Eliminar cuenta"
     }
   }
 }

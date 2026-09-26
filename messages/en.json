@@ -78,7 +78,8 @@
     "documents": {
       "privacy": "Privacy Policy",
       "terms": "Terms of Use",
-      "support": "Support"
+      "support": "Support",
+      "deletion": "Delete account"
     }
   }
 }
