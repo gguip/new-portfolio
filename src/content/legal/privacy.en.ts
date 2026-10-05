@@ -6,7 +6,7 @@ export const privacyEn: LegalDocument = {
   title: "Privacy Policy",
   summary:
     "TirzeFlow is a personal treatment journal. It holds health data you record yourself — weight, doses, measurements, side effects — which is the most sensitive information an app can hold. This policy states exactly what is collected, why, who it is shared with, and how to erase all of it. There is no advertising, no tracking, and nothing is sold.",
-  updatedAt: "2026-09-25",
+  updatedAt: "2026-10-04",
   sections: [
     {
       id: "controller",
@@ -28,7 +28,7 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Everything below is provided by you. TirzeFlow collects nothing in the background and does not access your calendar, contacts, location, camera, or your device's Health app.",
+          text: "The data below is provided by you or, for weight, read from the Health app or Health Connect when you turn that option on. TirzeFlow collects nothing in the background and does not access your calendar, contacts, or location. The camera is used only when you choose to take a progress photo.",
         },
         {
           type: "paragraph",
@@ -63,11 +63,13 @@ export const privacyEn: LegalDocument = {
           type: "list",
           items: [
             "Injections: date and time, dose in milligrams, injection site, lot number, and notes.",
-            "Weigh-ins: date and weight.",
+            "Weigh-ins: date, weight, and where the record came from (typed by you or read from the Health app / Health Connect).",
             "Body measurements: waist, hip, chest, arm, thigh, and body fat percentage.",
             "Side effects: date, type, severity, and notes.",
             "Workouts: date, type, duration, perceived exertion, and notes.",
             "Nutrition: meals with calories and macronutrients, and water intake.",
+            "Hunger and thoughts about food: two ratings from 1 to 5 per day.",
+            "Pen purchases: date, dose, number of injections and, if you enter it, the price paid.",
             "Any reminders you set.",
           ],
         },
@@ -80,6 +82,32 @@ export const privacyEn: LegalDocument = {
           items: [
             "IP address and app and operating system identification, stored alongside each active session. They let you end sessions and allow misuse of credentials to be detected.",
             "Server logs, which use only your internal identifier — never your name, your email, or any health data.",
+            "Crash reports: when the app crashes or the server answers with an internal error, a technical report is sent to Sentry (section 6). It carries the error description, the app version, the device model and operating system, and your internal identifier.",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Weight read from the Health app (iPhone) and Health Connect (Android):",
+        },
+        {
+          type: "list",
+          items: [
+            "Reading is off by default. You turn it on in Profile > Health, and the system asks for your permission at that moment. You can turn it off at any time, in the same place or in the system settings.",
+            "The app asks for a single data type, weight, and for reading only. It reads no other health data and never writes anything to the Health app or to Health Connect.",
+            "Reading happens while the app is open. The first weigh-in of each day is used, and it is saved to your account alongside the weigh-ins you type. A weight typed by you is never replaced by one that was read.",
+            "The weight that is read is used only to show your history and the calculations in section 4. It is not used for advertising, is not sold, and is not passed to any third party other than the hosting provider in section 6.",
+            "The use of information received from Health Connect adheres to the Health Connect Permissions policy, including the Limited Use requirements. Data obtained through HealthKit follows Apple's rules for that service.",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Data that stays only on your device and is not sent to the server:",
+        },
+        {
+          type: "list",
+          items: [
+            "Progress photos: kept encrypted (AES-256) on the device, with the key held in the operating system's secure storage. They are not part of the server backup and do not follow you to a new device.",
+            "Dietary restrictions, the day's menu swaps, and the request you write to build the menu. On iPhones with Apple Intelligence, that request is processed on the device itself.",
           ],
         },
       ],
@@ -90,7 +118,7 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Weight, measurements, medication dose, and side effects are sensitive personal data concerning health. They are processed only because you gave specific, prominent consent when creating your account, and exclusively for the purposes set out in this policy.",
+          text: "Weight, measurements, medication dose, side effects, and hunger ratings are sensitive personal data concerning health. They are processed only because you gave specific, prominent consent when creating your account, and exclusively for the purposes set out in this policy.",
         },
         {
           type: "paragraph",
@@ -105,8 +133,8 @@ export const privacyEn: LegalDocument = {
         {
           type: "list",
           items: [
-            "Showing you your own history: weight progression, logged injections, measurements, side effects, workouts, and nutrition.",
-            "Calculating the figures the app displays — body mass index, weekly average, calorie and protein targets, maintenance band, and the next injection site in the rotation.",
+            "Showing you your own history: weight progression, logged injections, measurements, side effects, workouts, nutrition, hunger, and pen purchases.",
+            "Calculating the figures the app displays — body mass index, weekly average, calorie and protein targets, maintenance band, the next injection site in the rotation, pen stock, and spending.",
             "Authenticating you, keeping your session open, and protecting the account against unauthorised access.",
             "Sending strictly operational email: the sign-up verification code and the password reset code. TirzeFlow sends no newsletter, no promotion, and no marketing of any kind.",
           ],
@@ -119,7 +147,7 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "This section matters as much as the previous one, and it is verifiable: the app ships no analytics, advertising, or crash reporting library whatsoever.",
+          text: "This section matters as much as the previous one, and it is verifiable: the app ships no usage analytics or advertising library. The only third-party tool that receives technical data is the crash reporting described in section 6.",
         },
         {
           type: "list",
@@ -127,7 +155,7 @@ export const privacyEn: LegalDocument = {
             "It does not sell, rent, or trade your data with anyone.",
             "It shows no advertising and does not use your data to target ads.",
             "It does not track you inside or outside the app, and uses no advertising identifiers.",
-            "It uses no analytics, telemetry, or crash reporting tools that capture screen contents.",
+            "It uses no analytics or usage telemetry tools, and crash reporting is configured not to capture screen contents or what you type.",
             "It shares nothing with health plans, employers, pharmaceutical companies, insurers, or data brokers.",
             "It does not use your health data to train artificial intelligence models.",
           ],
@@ -147,6 +175,7 @@ export const privacyEn: LegalDocument = {
           items: [
             "Amazon Web Services (AWS): hosts the server and the database, in the São Paulo region in Brazil. This is where your records are stored.",
             "Resend: sends the operational email. It receives your email address and the verification code — no health data.",
+            "Sentry: receives crash reports from the app and the server, on servers in the European Union. It is configured not to receive weight, dose, side effects, email, name, or request contents, and not to store the IP address. The report carries your internal identifier, which on its own does not say who you are.",
             "Google and Apple: only if you choose to sign in with one of those accounts. Authentication happens on their side, and they receive nothing from the contents of your journal.",
           ],
         },
@@ -162,7 +191,7 @@ export const privacyEn: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Data is held on a server located in Brazil, in São Paulo. The connection between the app and the server is always encrypted.",
+          text: "Your account records are held on a server located in Brazil, in São Paulo. Crash reports are held on Sentry's servers in the European Union. The connection between the app and the server is always encrypted.",
         },
         {
           type: "paragraph",
@@ -225,7 +254,11 @@ export const privacyEn: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "Deletion is permanent and cascades: the account and every associated record — profile, injections, weigh-ins, measurements, side effects, workouts, meals, water intake, reminders, and sessions. There is no soft delete and no grace period; the data cannot be recovered afterwards.",
+          text: "Deletion is permanent and cascades: the account and every associated record — profile, injections, weigh-ins, measurements, side effects, workouts, meals, water intake, hunger ratings, pen purchases, reminders, and sessions. There is no soft delete and no grace period; the data cannot be recovered afterwards.",
+        },
+        {
+          type: "paragraph",
+          text: "Progress photos and the key that protects them are erased from the device on which the deletion is done. Uninstalling the app also removes them.",
         },
         {
           type: "paragraph",

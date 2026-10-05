@@ -6,7 +6,7 @@ export const deletionEs: LegalDocument = {
   title: "Eliminar cuenta",
   summary:
     "Cómo eliminar tu cuenta de TirzeFlow y todo lo que guarda: desde la aplicación, o por correo si ya no la tienes instalada.",
-  updatedAt: "2026-09-25",
+  updatedAt: "2026-10-04",
   sections: [
     {
       id: "en-la-app",
@@ -45,7 +45,7 @@ export const deletionEs: LegalDocument = {
           type: "list",
           items: [
             "La cuenta: nombre, correo y contraseña.",
-            "El perfil y todos los registros: aplicaciones, pesajes, medidas, efectos secundarios, entrenamientos, comidas, agua y recordatorios.",
+            "El perfil y todos los registros: aplicaciones, pesajes, medidas, efectos secundarios, entrenamientos, comidas, agua, registros de hambre, compras de plumas y recordatorios.",
             "El vínculo con Apple, si la cuenta se creó con ella: se revoca el acceso de la aplicación a tu ID de Apple.",
           ],
         },

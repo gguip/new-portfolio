@@ -6,7 +6,7 @@ export const deletionPt: LegalDocument = {
   title: "Excluir conta",
   summary:
     "Como apagar a sua conta do TirzeFlow e tudo o que ela guarda — pelo app, ou por e-mail se você não tem mais o app instalado.",
-  updatedAt: "2026-09-25",
+  updatedAt: "2026-10-04",
   sections: [
     {
       id: "pelo-app",
@@ -45,7 +45,7 @@ export const deletionPt: LegalDocument = {
           type: "list",
           items: [
             "A conta: nome, e-mail e senha.",
-            "O perfil e todos os registros: aplicações, pesagens, medidas, efeitos colaterais, treinos, refeições, água e lembretes.",
+            "O perfil e todos os registros: aplicações, pesagens, medidas, efeitos colaterais, treinos, refeições, água, registros de fome, compras de canetas e lembretes.",
             "O vínculo com a Apple, quando a conta foi criada com ela: o acesso do app ao seu ID Apple é revogado.",
           ],
         },

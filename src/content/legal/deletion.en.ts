@@ -6,7 +6,7 @@ export const deletionEn: LegalDocument = {
   title: "Delete account",
   summary:
     "How to delete your TirzeFlow account and everything in it — in the app, or by email if you no longer have the app installed.",
-  updatedAt: "2026-09-25",
+  updatedAt: "2026-10-04",
   sections: [
     {
       id: "in-the-app",
@@ -45,7 +45,7 @@ export const deletionEn: LegalDocument = {
           type: "list",
           items: [
             "The account: name, email and password.",
-            "The profile and every record: injections, weigh-ins, measurements, side effects, workouts, meals, water and reminders.",
+            "The profile and every record: injections, weigh-ins, measurements, side effects, workouts, meals, water, hunger ratings, pen purchases and reminders.",
             "The link to Apple, when the account was created with it: the app's access to your Apple ID is revoked.",
           ],
         },

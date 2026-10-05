@@ -6,7 +6,7 @@ export const privacyPt: LegalDocument = {
   title: "Política de Privacidade",
   summary:
     "O TirzeFlow é um diário pessoal de tratamento. Ele guarda dados de saúde que você mesmo registra — peso, doses, medidas, sintomas — e essa é a informação mais sensível que um aplicativo pode guardar. Esta política diz exatamente o que é coletado, por quê, com quem é compartilhado e como apagar tudo. Não há publicidade, não há rastreamento e nada é vendido.",
-  updatedAt: "2026-09-25",
+  updatedAt: "2026-10-04",
   sections: [
     {
       id: "controlador",
@@ -28,7 +28,7 @@ export const privacyPt: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Todos os dados abaixo são fornecidos por você. O TirzeFlow não coleta nada em segundo plano, não acessa sua agenda, seus contatos, sua localização, sua câmera nem o app Saúde do seu aparelho.",
+          text: "Os dados abaixo são fornecidos por você ou, no caso do peso, lidos do app Saúde ou do Health Connect quando você liga essa opção. O TirzeFlow não coleta nada em segundo plano e não acessa sua agenda, seus contatos nem sua localização. A câmera só é usada quando você escolhe tirar uma foto de progresso.",
         },
         {
           type: "paragraph",
@@ -63,11 +63,13 @@ export const privacyPt: LegalDocument = {
           type: "list",
           items: [
             "Aplicações: data e hora, dose em miligramas, local da aplicação, número do lote e observações.",
-            "Pesagens: data e peso.",
+            "Pesagens: data, peso e a origem do registro (digitado por você ou lido do app Saúde / Health Connect).",
             "Medidas corporais: cintura, quadril, tórax, braço, coxa e percentual de gordura.",
             "Efeitos colaterais: data, tipo, intensidade e observações.",
             "Treinos: data, tipo, duração, percepção de esforço e observações.",
             "Alimentação: refeições com calorias e macronutrientes, e consumo de água.",
+            "Fome e pensamentos sobre comida: duas notas de 1 a 5 por dia.",
+            "Compras de canetas: data, dose, número de aplicações e, se você informar, o preço pago.",
             "Lembretes que você configurar.",
           ],
         },
@@ -80,6 +82,32 @@ export const privacyPt: LegalDocument = {
           items: [
             "Endereço IP e identificação do aplicativo e do sistema operacional, guardados junto de cada sessão ativa. Servem para você poder encerrar sessões e para detectar uso indevido de credenciais.",
             "Registros técnicos do servidor, que usam apenas o seu identificador interno — nunca o seu nome, o seu e-mail ou qualquer dado de saúde.",
+            "Relatórios de falha: quando o aplicativo quebra ou o servidor responde com erro interno, um relatório técnico é enviado ao Sentry (seção 6). Ele leva a descrição do erro, a versão do aplicativo, o modelo e o sistema do aparelho e o seu identificador interno.",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Peso lido do app Saúde (iPhone) e do Health Connect (Android):",
+        },
+        {
+          type: "list",
+          items: [
+            "A leitura vem desligada. Você a liga em Perfil > Saúde, e o sistema pede a sua autorização nesse momento. Você pode desligá-la quando quiser, no mesmo lugar ou nos ajustes do sistema.",
+            "O aplicativo pede acesso a um único tipo de dado, o peso, e só para leitura. Ele não lê nenhum outro dado de saúde e nunca grava nada no app Saúde nem no Health Connect.",
+            "A leitura acontece com o aplicativo aberto. Vale a primeira pesagem de cada dia, que é gravada na sua conta junto das pesagens digitadas. Um peso digitado por você nunca é substituído por um peso lido.",
+            "O peso lido é usado só para mostrar o seu histórico e os cálculos da seção 4. Não é usado para publicidade, não é vendido e não é repassado a terceiros além do serviço de hospedagem da seção 6.",
+            "O uso das informações recebidas do Health Connect segue a política de permissões do Health Connect, incluindo os requisitos de Uso Limitado. Os dados obtidos pelo HealthKit seguem as regras da Apple para esse serviço.",
+          ],
+        },
+        {
+          type: "paragraph",
+          text: "Dados que ficam só no seu aparelho e não são enviados ao servidor:",
+        },
+        {
+          type: "list",
+          items: [
+            "Fotos de progresso: ficam cifradas (AES-256) no aparelho, com a chave guardada no armazenamento seguro do sistema. Não entram na cópia de segurança do servidor e não acompanham você na troca de aparelho.",
+            "Restrições alimentares, trocas do cardápio do dia e o pedido que você escreve para montar o cardápio. Em iPhones com Apple Intelligence, esse pedido é processado no próprio aparelho.",
           ],
         },
       ],
@@ -90,7 +118,7 @@ export const privacyPt: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Peso, medidas, dose de medicamento e efeitos colaterais são dados pessoais sensíveis referentes à saúde, na definição do artigo 5º, inciso II, da LGPD. Eles só são tratados porque você deu consentimento específico e destacado ao criar a conta, e exclusivamente para as finalidades desta política.",
+          text: "Peso, medidas, dose de medicamento, efeitos colaterais e os registros de fome são dados pessoais sensíveis referentes à saúde, na definição do artigo 5º, inciso II, da LGPD. Eles só são tratados porque você deu consentimento específico e destacado ao criar a conta, e exclusivamente para as finalidades desta política.",
         },
         {
           type: "paragraph",
@@ -105,8 +133,8 @@ export const privacyPt: LegalDocument = {
         {
           type: "list",
           items: [
-            "Mostrar a você o seu próprio histórico: evolução de peso, aplicações registradas, medidas, sintomas, treinos e alimentação.",
-            "Calcular os números que o aplicativo exibe — índice de massa corporal, média semanal, metas calóricas e de proteína, faixa de manutenção e próximo local do rodízio de aplicação.",
+            "Mostrar a você o seu próprio histórico: evolução de peso, aplicações registradas, medidas, sintomas, treinos, alimentação, fome e compras de canetas.",
+            "Calcular os números que o aplicativo exibe — índice de massa corporal, média semanal, metas calóricas e de proteína, faixa de manutenção, próximo local do rodízio de aplicação, estoque de canetas e gasto.",
             "Autenticar você, manter a sessão aberta e proteger a conta contra acesso indevido.",
             "Enviar e-mails estritamente operacionais: o código de verificação do cadastro e o código de redefinição de senha. O TirzeFlow não envia newsletter, promoção nem qualquer comunicação de marketing.",
           ],
@@ -119,7 +147,7 @@ export const privacyPt: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Esta seção é tão importante quanto a anterior, e é verificável: o aplicativo não embarca nenhuma biblioteca de análise, de publicidade ou de relatório de falhas.",
+          text: "Esta seção é tão importante quanto a anterior, e é verificável: o aplicativo não embarca nenhuma biblioteca de análise de uso nem de publicidade. A única ferramenta de terceiros que recebe dados técnicos é o relatório de falhas descrito na seção 6.",
         },
         {
           type: "list",
@@ -127,7 +155,7 @@ export const privacyPt: LegalDocument = {
             "Não vende, aluga nem troca seus dados com ninguém.",
             "Não exibe publicidade e não usa seus dados para segmentar anúncios.",
             "Não rastreia você dentro nem fora do aplicativo, e não usa identificadores de publicidade.",
-            "Não usa ferramentas de analytics, de telemetria ou de relatório de falhas que capturem o conteúdo das telas.",
+            "Não usa ferramentas de analytics nem de telemetria de uso, e o relatório de falhas é configurado para não capturar o conteúdo das telas nem o que você digita.",
             "Não compartilha nada com plano de saúde, empregador, farmacêutica, seguradora ou empresa de dados.",
             "Não usa seus dados de saúde para treinar modelos de inteligência artificial.",
           ],
@@ -147,6 +175,7 @@ export const privacyPt: LegalDocument = {
           items: [
             "Amazon Web Services (AWS): hospeda o servidor e o banco de dados, na região de São Paulo, no Brasil. É onde os seus registros ficam guardados.",
             "Resend: envia os e-mails operacionais. Recebe o seu endereço de e-mail e o código de verificação — nenhum dado de saúde.",
+            "Sentry: recebe os relatórios de falha do aplicativo e do servidor, em servidores na União Europeia. É configurado para não receber peso, dose, sintomas, e-mail, nome nem o conteúdo das requisições, e para não guardar o endereço IP. O relatório leva o seu identificador interno, que sozinho não diz quem você é.",
             "Google e Apple: apenas se você escolher entrar por uma dessas contas. A autenticação acontece no ambiente deles, e eles não recebem nada do conteúdo do seu diário.",
           ],
         },
@@ -162,7 +191,7 @@ export const privacyPt: LegalDocument = {
       blocks: [
         {
           type: "paragraph",
-          text: "Os dados ficam em servidor localizado no Brasil, em São Paulo. A conexão entre o aplicativo e o servidor é sempre criptografada.",
+          text: "Os registros da sua conta ficam em servidor localizado no Brasil, em São Paulo. Os relatórios de falha ficam nos servidores do Sentry, na União Europeia. A conexão entre o aplicativo e o servidor é sempre criptografada.",
         },
         {
           type: "paragraph",
@@ -225,7 +254,11 @@ export const privacyPt: LegalDocument = {
         },
         {
           type: "paragraph",
-          text: "A exclusão é definitiva e apaga, em cascata, a conta e todos os registros associados: perfil, aplicações, pesagens, medidas, efeitos colaterais, treinos, refeições, consumo de água, lembretes e sessões. Não existe exclusão reversível nem período de carência — não há como recuperar os dados depois.",
+          text: "A exclusão é definitiva e apaga, em cascata, a conta e todos os registros associados: perfil, aplicações, pesagens, medidas, efeitos colaterais, treinos, refeições, consumo de água, registros de fome, compras de canetas, lembretes e sessões. Não existe exclusão reversível nem período de carência — não há como recuperar os dados depois.",
+        },
+        {
+          type: "paragraph",
+          text: "As fotos de progresso e a chave que as protege são apagadas do aparelho em que a exclusão é feita. Desinstalar o aplicativo também as remove.",
         },
         {
           type: "paragraph",
