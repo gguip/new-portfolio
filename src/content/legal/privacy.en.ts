@@ -234,7 +234,7 @@ export const privacyEn: LegalDocument = {
         {
           type: "list",
           items: [
-            "Correction: every journal record can be edited or deleted individually, at any time.",
+            "Correction: your profile data and the current week's injection can be corrected in the app. To correct or delete any other specific record, write to suporte@gguip.dev from the email address registered on the account.",
             "Erasure: deleting your account, done inside the app, erases everything.",
           ],
         },
