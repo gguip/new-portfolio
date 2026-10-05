@@ -234,7 +234,7 @@ export const privacyPt: LegalDocument = {
         {
           type: "list",
           items: [
-            "Correção: todo registro do diário pode ser editado ou apagado individualmente, a qualquer momento.",
+            "Correção: os dados do perfil e a aplicação da semana corrente podem ser corrigidos no aplicativo. Para corrigir ou apagar outro registro específico, escreva para suporte@gguip.dev a partir do e-mail cadastrado na conta.",
             "Eliminação: a exclusão da conta, feita dentro do aplicativo, apaga tudo.",
           ],
         },

@@ -234,7 +234,7 @@ export const privacyEs: LegalDocument = {
         {
           type: "list",
           items: [
-            "Rectificación: cada registro del diario puede editarse o borrarse individualmente, en cualquier momento.",
+            "Rectificación: los datos del perfil y la aplicación de la semana en curso pueden corregirse en la aplicación. Para corregir o borrar otro registro concreto, escribe a suporte@gguip.dev desde el correo registrado en la cuenta.",
             "Supresión: eliminar la cuenta, desde dentro de la aplicación, lo borra todo.",
           ],
         },
