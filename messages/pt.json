@@ -57,6 +57,10 @@
     }
   },
   "projects": {
+    "proj-3": {
+      "title": "TirzeFlow",
+      "description": "Diário de tratamento com tirzepatida e de perda de peso, para iOS: aplicação semanal com rodízio de local, peso, medidas, efeitos colaterais e manutenção. Desenvolvi o app, a API e o site."
+    },
     "proj-1": {
       "title": "GoHoot",
       "description": "Plataforma de quizzes interativos em tempo real. Crie quizzes personalizados e jogue com amigos com rankings ao vivo, gamificação e suporte multi-device."
@@ -69,17 +73,5 @@
   "skills": {
     "accessibility": "Acessibilidade (a11y)",
     "responsiveDesign": "Design Responsivo"
-  },
-  "legal": {
-    "back": "Voltar ao início",
-    "updated": "Última atualização em {date}",
-    "contents": "Nesta página",
-    "seeAlso": "Veja também:",
-    "documents": {
-      "privacy": "Política de Privacidade",
-      "terms": "Termos de Uso",
-      "support": "Suporte",
-      "deletion": "Excluir conta"
-    }
   }
 }
