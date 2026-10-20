@@ -3,7 +3,7 @@ import { ProjectMeta } from "@/types";
 export const projects: ProjectMeta[] = [
   {
     id: "proj-3",
-    url: "https://tirzeflow.gguip.dev/",
+    url: "https://tirzeflow.app/",
     image: "/screenshots/tirzeflow.png",
     technologies: ["React Native", "Expo", "NestJS", "PostgreSQL", "Astro"],
   },
